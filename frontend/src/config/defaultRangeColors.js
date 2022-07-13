@@ -1,0 +1,1 @@
+export const defaultRangeColors = ['#264653']

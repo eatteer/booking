@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  /* for Firefox */
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  /* for Chrome, Safari, and Opera */
+  display: none;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  min-width: 160px;
+  /* height: 100%; */
+  border-radius: 0.3rem;
+  cursor: pointer;
+  /* transform: scale(1, 1); */
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.card:hover {
+  /* transform: scale(1.03, 1.03); */
+}
+
+.card img {
+  display: flex;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.3rem;
+  background: linear-gradient(0deg, #00000088 10%, #ffffff44 100%);
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  color: white;
+}

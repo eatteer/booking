@@ -1,0 +1,63 @@
+.searchBar {
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.barItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--primaryColor);
+}
+
+.itemIcon {
+  display: flex;
+  font-size: 32px;
+}
+
+.rangeDatePicker {
+  position: relative;
+  z-index: 20;
+  position: absolute;
+  top: 60px;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+}
+
+.filters {
+  z-index: 20;
+  position: absolute;
+  top: 60px;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+  background-color: white;
+}
+
+.filterItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filterItem:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .searchBar {
+    display: flex;
+    position: absolute;
+    bottom: -35px;
+    margin: 0 1rem;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 0.3rem;
+  }
+}
+

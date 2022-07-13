@@ -1,0 +1,107 @@
+:root {
+  --mobilePagePadding: 16px;
+  --primaryColor: #264653;
+  --secondaryColor: #e9c46a;
+  --errorColor: #ff006e;
+  --gray: rgb(53, 53, 53);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: white;
+  background-color: var(--primaryColor);
+}
+
+.button.primary:hover {
+  background-color: #233f4b;
+}
+
+.light {
+  color: var(--primaryColor);
+  background-color: white;
+}
+
+.button.light:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.input {
+  width: 100%;
+  padding: 8px 16px;
+  outline: none;
+  border: 2px solid lightgray;
+  border-radius: 0.3rem;
+}
+
+.input.primary:focus {
+  border: 2px solid var(--primaryColor);
+}
+
+.input.secondary:focus {
+  border: 2px solid var(--secondaryColor);
+}
+
+/* DEPRECATED */
+.primary-focus:focus {
+  border: 2px solid var(--primaryColor);
+}
+
+.secondary-focus:focus {
+  border: 2px solid var(--secondaryColor);
+}
+/* DEPRECATED */
+
+.input.error {
+  border: 2px solid var(--errorColor);
+}
+
+.input.error:focus {
+  border: 2px solid var(--errorColor);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.rdrDateDisplayWrapper {
+  border-radius: 0.3rem;
+}

@@ -1,0 +1,15 @@
+.container {
+  margin: 2rem 0;
+  padding: 1rem;
+  color: white;
+}
+
+.container p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-bottom: 0;
+  }
+}

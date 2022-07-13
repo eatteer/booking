@@ -1,0 +1,42 @@
+.background {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.title {
+  color: var(--primaryColor);
+}
+
+.closeButton {
+  display: flex;
+  cursor: pointer;
+}
+
+.modalContainer {
+  position: relative;
+  top: 4rem;
+  max-width: 512px;
+  margin: auto;
+  border-radius: 0.3rem;
+  background-color: white;
+  cursor: default;
+}

@@ -1,0 +1,22 @@
+.quantifier {
+  display: flex;
+  font-size: 1rem;
+}
+
+.quantifier__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  background-color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.quantifier__value {
+  width: 2rem;
+  text-align: center;
+}

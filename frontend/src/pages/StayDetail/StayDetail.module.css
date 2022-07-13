@@ -1,0 +1,70 @@
+.main {
+  max-width: 1024px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.header button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.header h2,
+.description h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gray);
+}
+
+.header h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.header h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.03, 1.03);
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+.description p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+@media screen and (min-width: 768px) {
+  .header button {
+    margin-top: 1rem;
+    width: max-content;
+  }
+}

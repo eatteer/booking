@@ -1,0 +1,41 @@
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.maxPeople {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.price {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.roomNumbers {
+  display: flex;
+  gap: 1rem;
+}
+
+.roomNumber {
+  display: flex;
+  flex-direction: column;
+}
+
+.roomNumber label {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .room {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .price {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--secondaryColor);
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.rangeDatePickerContainer {
+  position: relative;
+}
+
+.rangeDatePicker {
+  z-index: 20;
+  position: absolute;
+  top: 60px;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    border-radius: 0.3rem;
+    margin: 2rem 1rem;
+  }
+}

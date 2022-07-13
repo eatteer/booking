@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  /* for Firefox */
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  /* for Chrome, Safari, and Opera */
+  display: none;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  min-width: 160px;
+  /* height: 100%; */
+  border-radius: 0.3rem;
+  cursor: pointer;
+  /* transform: scale(1, 1); */
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.card:hover {
+  /* transform: scale(1.03, 1.03); */
+}
+
+.card img {
+  display: flex;
+  /* height: 100%; */
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.details h2,
+.details h3,
+.details h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.details h2 {
+  font-size: 1rem;
+}
+
+.details h3 {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.details h4 {
+  font-size: 1rem;
+}
