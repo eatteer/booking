@@ -4,8 +4,8 @@
   color: white;
 }
 
-.container p {
-  margin-bottom: 1rem;
+.container button {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
