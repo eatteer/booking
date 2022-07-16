@@ -14,17 +14,17 @@
   margin-bottom: 0.5rem;
 }
 
-.roomNumbers {
+.roomTypes {
   display: flex;
   gap: 1rem;
 }
 
-.roomNumber {
+.roomType {
   display: flex;
   flex-direction: column;
 }
 
-.roomNumber label {
+.roomType label {
   font-size: 0.7rem;
 }
 

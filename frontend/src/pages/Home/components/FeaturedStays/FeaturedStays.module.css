@@ -15,23 +15,26 @@
   position: relative;
   flex: 1;
   min-width: 160px;
-  /* height: 100%; */
   border-radius: 0.3rem;
   cursor: pointer;
-  /* transform: scale(1, 1); */
-  /* transition: all 0.3s ease-in-out; */
 }
 
-.card:hover {
-  /* transform: scale(1.03, 1.03); */
+.imageContainer {
+  overflow: hidden;
+  border-radius: 0.3rem;
 }
 
-.card img {
+.imageContainer img {
   display: flex;
-  /* height: 100%; */
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 0.3rem;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.imageContainer:hover img {
+  transform: scale(1.1, 1.1);
 }
 
 .details h2,
