@@ -18,10 +18,10 @@ const RoomType = ({ roomType, onChangeSelectRoom }) => {
           {nights > 1 ? ' nights ' : ' night '}
           for ${nights * roomType.price}</p>
       </div>
-      <div className={styles.roomNumbers}>
+      <div className={styles.roomTypes}>
         {roomType.rooms.map(room => {
           return (
-            <div key={room._id} className={styles.roomNumber}>
+            <div key={room._id} className={styles.roomType}>
               <label htmlFor="room">{room.number}</label>
               <input
                 name="room"

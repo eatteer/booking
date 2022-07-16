@@ -14,6 +14,7 @@
 
 .rangeDatePickerContainer {
   position: relative;
+  cursor: pointer;
 }
 
 .rangeDatePicker {

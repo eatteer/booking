@@ -33,10 +33,12 @@ const FeaturedStays = () => {
             className={styles.card}
             onClick={() => _navigateToDetails(stay._id)}
           >
-            <img
-              src={stay.images[0]}
-              alt={stay.name}
-            />
+            <div className={styles.imageContainer}>
+              <img
+                src={stay.images[0]}
+                alt={stay.name}
+              />
+            </div>
             <div className={styles.details}>
               <h2>{stay.name}</h2>
               <h3 >{stay.address.country} - {stay.address.city}</h3>

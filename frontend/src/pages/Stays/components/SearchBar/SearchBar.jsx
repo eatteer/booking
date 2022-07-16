@@ -128,7 +128,7 @@ const SearchBar = ({ _setDestination }) => {
 
       <div
         ref={dateRangePickerRef}
-        className={`${styles.rangeDatePickerContainer} cursor-pointer`}
+        className={styles.rangeDatePickerContaine}
       >
         <label>Check-in date</label>
         <p onClick={_toggleOpenDateRangePicker}>{initialDate} to {endDate}</p>
