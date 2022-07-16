@@ -30,7 +30,7 @@ function App() {
           </BrowserRouter>
           {/* <Toaster /> */}
           <ToastContainer position="bottom-center" />
-          {/* <ReactQueryDevtools /> */}
+          <ReactQueryDevtools />
         </SearchContextProvider>
       </AuthContextProvider>
     </QueryClientProvider>

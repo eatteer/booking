@@ -11,6 +11,26 @@
   display: none;
 }
 
+.skeleton {
+  background-color: gray;
+  aspect-ratio: 1/1;
+  width: 100%;
+  min-width: 160px;
+  max-width: 320px;
+  border-radius: 0.3rem;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
 .card {
   position: relative;
   flex: 1;
