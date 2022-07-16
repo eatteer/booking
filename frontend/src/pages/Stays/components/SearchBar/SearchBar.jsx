@@ -21,7 +21,7 @@ import Select from '../../../../components/Select/Select'
 import styles from './SearchBar.module.css'
 import { defaultRangeColors } from '../../../../config/defaultRangeColors'
 
-const SearchBar = ({ _setDestination }) => {
+const SearchBar = ({ _setDestination, _setType }) => {
   /* Consts */
   const options = [
     {
@@ -97,6 +97,7 @@ const SearchBar = ({ _setDestination }) => {
   const _submit = (event) => {
     event.preventDefault()
     _setDestination(destination)
+    _setType(type)
   }
 
   return (
