@@ -27,14 +27,11 @@ const StayTypes = () => {
 
   return (
     <div className={styles.container}>
-      {isLoading && (
-        <Oval
-          height="42"
-          width="42"
-          color='grey'
-          ariaLabel='loading'
-        />
-      )}
+      {isLoading && [...Array(5).keys()].map(_ => {
+        return (
+          <div className={styles.skeleton}></div>
+        )
+      })}
       {stays && stays.map((stay, index) => {
         const { type, count } = stay
         const key = `${type}${count}]`
