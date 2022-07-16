@@ -20,6 +20,7 @@ import styles from './Stays.module.css'
 import Loader from '../../components/Loader/Loader'
 
 const Stays = () => {
+
   /* Hooks */
   const {
     destination,
@@ -29,10 +30,11 @@ const Stays = () => {
 
   /* States */
   const [_destination, _setDestination] = useState(destination)
-
+  const [_type, _setType] = useState(type)
+  
   const { data: stays, isFetched, isLoading } = useQuery(
-    ['stays', _destination],
-    () => getStays(_destination, filters.minPrice, filters.maxPrice, type),
+    ['stays', _destination, _type],
+    () => getStays(_destination, filters.minPrice, filters.maxPrice, _type),
   )
 
   return (
@@ -40,7 +42,7 @@ const Stays = () => {
       <Navbar />
       <Header type='list' />
       <main className={styles.main}>
-        <SearchBar _setDestination={_setDestination} />
+        <SearchBar _setDestination={_setDestination} _setType={_setType} />
         <div className={styles.results}>
           {isFetched && stays.length === 0 && (
             <h2>Nothing found :C</h2>
