@@ -16,7 +16,7 @@ import verifyToken from '../middlewares/verifyToken'
 
 const router = Router()
 
-router.post('/', createOne)
+router.post('/', verifyToken, verifyRole([Roles.Admin]), createOne)
 router.get('/', findByFilters)
 router.post('/:id/rooms/status', findRoomsStatus)
 router.get('/featured', findFeatured)

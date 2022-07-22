@@ -8,6 +8,6 @@ const router = Router()
 
 router.post('/login', loginUser)
 router.post('/register/client', createClient) /* Used by client frontend. Has client role hard-coded */
-router.post('/register', createUser)
+router.post('/register', verifyToken, verifyRole([Roles.Admin]), createUser)
 
 export default router

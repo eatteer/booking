@@ -4,7 +4,6 @@ import {
   findAll,
   findById,
   updateById,
-  addDatesBooked,
   removeById
 } from '../controllers/roomTypes'
 import { Roles } from '../models/Role'
@@ -13,11 +12,10 @@ import verifyToken from '../middlewares/verifyToken'
 
 const router = Router()
 
-router.post('/', createOne)
-router.get('/', findAll)
-router.get('/:id', findById)
-router.put('/:id', updateById)
-router.put('/add-dates-booked/:roomNumberId', addDatesBooked)
-router.delete('/:roomId/:hotelId', removeById)
+router.post('/', verifyToken, verifyRole([Roles.Admin]), createOne)
+router.get('/', verifyToken, verifyRole([Roles.Admin]), findAll)
+router.get('/:id', verifyToken, verifyRole([Roles.Admin]), findById)
+router.put('/:id', verifyToken, verifyRole([Roles.Admin]), updateById)
+router.delete('/:roomId/:hotelId', verifyToken, verifyRole([Roles.Admin]), removeById)
 
 export default router
